@@ -136,62 +136,67 @@ export default function Home() {
       </section>
 
       {/* Skills/Technologies Section */}
-      <section className="py-32 px-6 relative">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-24 px-6 relative">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-20"
+            className="mb-16"
           >
-            <h2 className="text-5xl md:text-6xl font-bold mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Tech <span className="gradient-text">Stack</span>
             </h2>
-            <p className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
               Technologies and tools I work with to bring ideas to life
             </p>
           </motion.div>
 
-          <div className="flex justify-center">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 max-w-2xl w-full"
-            >
-              <div className="flex items-center space-x-2 mb-8">
-                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                <span className="text-slate-400 text-sm ml-4">vinay@portfolio:~$</span>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-slate-700 max-w-3xl mx-auto"
+          >
+            <div className="flex items-center justify-center space-x-2 mb-8">
+              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              <span className="text-slate-400 text-sm ml-4">vinay@portfolio:~$</span>
+            </div>
+            
+            <div className="space-y-6 text-left">
+              <div className="space-y-3 font-mono">
+                <div className="text-green-400 text-lg">$ whoami</div>
+                <div className="text-white font-semibold text-lg pl-4">vinay_mahale</div>
               </div>
-              <div className="space-y-4 text-lg font-mono">
-                <div className="text-green-400">$ whoami</div>
-                <div className="text-white font-semibold pl-4">vinay_mahale</div>
-                
-                <div className="text-green-400 mt-6">$ cat skills.txt</div>
+              
+              <div className="space-y-3 font-mono">
+                <div className="text-green-400 text-lg">$ cat skills.txt</div>
                 <div className="pl-4 space-y-2">
-                  <div className="text-cyan-300 font-medium">• Web Development (React, Next.js)</div>
-                  <div className="text-cyan-300 font-medium">• Data Analytics & Visualization</div>
-                  <div className="text-cyan-300 font-medium">• Business Intelligence</div>
-                  <div className="text-cyan-300 font-medium">• Cloud Solutions (AWS, Azure)</div>
-                  <div className="text-cyan-300 font-medium">• Database Management</div>
+                  <div className="text-cyan-300 font-medium text-base">• Web Development (React, Next.js)</div>
+                  <div className="text-cyan-300 font-medium text-base">• Data Analytics & Visualization</div>
+                  <div className="text-cyan-300 font-medium text-base">• Business Intelligence</div>
+                  <div className="text-cyan-300 font-medium text-base">• Cloud Solutions (AWS, Azure)</div>
+                  <div className="text-cyan-300 font-medium text-base">• Database Management</div>
                 </div>
-                
-                <div className="text-green-400 mt-6">$ ls technologies/</div>
-                <div className="pl-4 space-y-1">
-                  <div className="text-yellow-400">javascript/  typescript/  python/</div>
-                  <div className="text-blue-400">react/  nextjs/  nodejs/</div>
-                  <div className="text-purple-400">tailwindcss/  framer-motion/</div>
-                  <div className="text-orange-400">powerbi/  tableau/  sql/</div>
-                </div>
-                
-                <div className="text-green-400 animate-pulse mt-6">$ _</div>
               </div>
-            </motion.div>
-          </div>
+              
+              <div className="space-y-3 font-mono">
+                <div className="text-green-400 text-lg">$ ls technologies/</div>
+                <div className="pl-4 space-y-2">
+                  <div className="text-yellow-400 font-medium">javascript/  typescript/  python/</div>
+                  <div className="text-blue-400 font-medium">react/  nextjs/  nodejs/</div>
+                  <div className="text-purple-400 font-medium">tailwindcss/  framer-motion/</div>
+                  <div className="text-orange-400 font-medium">powerbi/  tableau/  sql/</div>
+                </div>
+              </div>
+              
+              <div className="text-green-400 animate-pulse font-mono text-lg pt-4">$ _</div>
+            </div>
+          </motion.div>
         </div>
       </section>
     </main>
