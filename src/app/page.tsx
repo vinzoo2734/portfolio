@@ -135,8 +135,8 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* About Preview Section */}
-      <section className="py-20 px-6 relative">
+      {/* Skills/Technologies Section */}
+      <section className="py-32 px-6 relative">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -146,79 +146,52 @@ export default function Home() {
             className="text-center mb-20"
           >
             <h2 className="text-5xl md:text-6xl font-bold mb-8">
-              About <span className="gradient-text">Me</span>
+              Tech <span className="gradient-text">Stack</span>
             </h2>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-2xl md:text-3xl text-slate-300 leading-relaxed font-medium mb-6">
-                I am a BTech + BSc Honours student with experience in web development, data analytics, and cloud solutions.
-              </p>
-              <p className="text-xl md:text-2xl text-slate-400 leading-relaxed">
-                I love turning ideas into functional and impactful projects.
-              </p>
-            </div>
+            <p className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+              Technologies and tools I work with to bring ideas to life
+            </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="grid md:grid-cols-2 gap-8 items-center"
-          >
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white">Problem Solver</h3>
-                  <p className="text-slate-400">Passionate about creating efficient solutions</p>
-                </div>
+          <div className="flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 max-w-2xl w-full"
+            >
+              <div className="flex items-center space-x-2 mb-8">
+                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                <span className="text-slate-400 text-sm ml-4">vinay@portfolio:~$</span>
               </div>
-              
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white">Fast Learner</h3>
-                  <p className="text-slate-400">Always eager to explore new technologies</p>
-                </div>
-              </div>
-
-              <Link 
-                href="/about"
-                className="inline-block bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-full hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 font-semibold mt-6"
-              >
-                Learn More About Me
-              </Link>
-            </div>
-
-            <div className="relative flex justify-center">
-              <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 max-w-md w-full">
-                <div className="flex items-center space-x-2 mb-6">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-slate-400 text-xs ml-4">Terminal</span>
-                </div>
-                <div className="space-y-3 text-base font-mono">
-                  <div className="text-green-400">$ whoami</div>
-                  <div className="text-white font-semibold">vinay_mahale</div>
-                  <div className="text-green-400">$ cat skills.txt</div>
-                  <div className="text-cyan-300 font-medium">• Web Development</div>
-                  <div className="text-cyan-300 font-medium">• Data Analytics</div>
+              <div className="space-y-4 text-lg font-mono">
+                <div className="text-green-400">$ whoami</div>
+                <div className="text-white font-semibold pl-4">vinay_mahale</div>
+                
+                <div className="text-green-400 mt-6">$ cat skills.txt</div>
+                <div className="pl-4 space-y-2">
+                  <div className="text-cyan-300 font-medium">• Web Development (React, Next.js)</div>
+                  <div className="text-cyan-300 font-medium">• Data Analytics & Visualization</div>
                   <div className="text-cyan-300 font-medium">• Business Intelligence</div>
-                  <div className="text-cyan-300 font-medium">• Cloud Solutions</div>
-                  <div className="text-green-400 animate-pulse">$ _</div>
+                  <div className="text-cyan-300 font-medium">• Cloud Solutions (AWS, Azure)</div>
+                  <div className="text-cyan-300 font-medium">• Database Management</div>
                 </div>
+                
+                <div className="text-green-400 mt-6">$ ls technologies/</div>
+                <div className="pl-4 space-y-1">
+                  <div className="text-yellow-400">javascript/  typescript/  python/</div>
+                  <div className="text-blue-400">react/  nextjs/  nodejs/</div>
+                  <div className="text-purple-400">tailwindcss/  framer-motion/</div>
+                  <div className="text-orange-400">powerbi/  tableau/  sql/</div>
+                </div>
+                
+                <div className="text-green-400 animate-pulse mt-6">$ _</div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </section>
     </main>

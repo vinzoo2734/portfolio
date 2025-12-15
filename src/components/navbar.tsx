@@ -25,7 +25,7 @@ export default function Navbar() {
             Projects
           </Link>
           <Link 
-            href="#contact" 
+            href="/contact" 
             className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-2 rounded-full hover:from-indigo-600 hover:to-purple-700 transition-all duration-200 glow-effect"
           >
             Contact
@@ -50,7 +50,7 @@ export default function Navbar() {
             <Link href="/" className="block text-slate-300 hover:text-indigo-400 transition-colors">Home</Link>
             <Link href="/about" className="block text-slate-300 hover:text-indigo-400 transition-colors">About</Link>
             <Link href="/projects" className="block text-slate-300 hover:text-indigo-400 transition-colors">Projects</Link>
-            <Link href="#contact" className="block text-slate-300 hover:text-indigo-400 transition-colors">Contact</Link>
+            <Link href="/contact" className="block text-slate-300 hover:text-indigo-400 transition-colors">Contact</Link>
           </div>
         </div>
       )}
