@@ -143,14 +143,19 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold mb-8">
               About <span className="gradient-text">Me</span>
             </h2>
-            <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
-              {siteConfig.about}
-            </p>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-2xl md:text-3xl text-slate-300 leading-relaxed font-medium mb-6">
+                I am a BTech + BSc Honours student with experience in web development, data analytics, and cloud solutions.
+              </p>
+              <p className="text-xl md:text-2xl text-slate-400 leading-relaxed">
+                I love turning ideas into functional and impactful projects.
+              </p>
+            </div>
           </motion.div>
 
           <motion.div
@@ -193,21 +198,22 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="relative">
-              <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700">
-                <div className="flex items-center space-x-2 mb-4">
+            <div className="relative flex justify-center">
+              <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 max-w-md w-full">
+                <div className="flex items-center space-x-2 mb-6">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <span className="text-slate-400 text-xs ml-4">Terminal</span>
                 </div>
-                <div className="space-y-2 text-sm font-mono">
+                <div className="space-y-3 text-base font-mono">
                   <div className="text-green-400">$ whoami</div>
-                  <div className="text-slate-300">vinay_mahale</div>
+                  <div className="text-white font-semibold">vinay_mahale</div>
                   <div className="text-green-400">$ cat skills.txt</div>
-                  <div className="text-slate-300">• Web Development</div>
-                  <div className="text-slate-300">• Data Analytics</div>
-                  <div className="text-slate-300">• Business Intelligence</div>
-                  <div className="text-slate-300">• Cloud Solutions</div>
+                  <div className="text-cyan-300 font-medium">• Web Development</div>
+                  <div className="text-cyan-300 font-medium">• Data Analytics</div>
+                  <div className="text-cyan-300 font-medium">• Business Intelligence</div>
+                  <div className="text-cyan-300 font-medium">• Cloud Solutions</div>
                   <div className="text-green-400 animate-pulse">$ _</div>
                 </div>
               </div>

@@ -11,19 +11,45 @@ export default function AboutPage() {
       
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-black mb-6">
+        <div className="text-center mb-20">
+          <h1 className="text-6xl md:text-7xl font-black mb-8">
             About <span className="gradient-text">Me</span>
           </h1>
-          <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-2xl md:text-3xl text-slate-300 max-w-4xl mx-auto leading-relaxed font-medium">
             Get to know more about my journey, skills, and passion for technology
           </p>
+        </div>
+
+        {/* Bio Section - Centered */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+            I am a <span className="gradient-text">BTech + BSc Honours student</span> with experience in web development, data analytics, and cloud solutions.
+          </h2>
+          <p className="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-5xl mx-auto mb-8">
+            I love turning ideas into functional and impactful projects.
+          </p>
+          
+          {/* Skills Tags */}
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            <span className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 py-2 rounded-full font-semibold">
+              Web Development
+            </span>
+            <span className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-4 py-2 rounded-full font-semibold">
+              Data Analytics  
+            </span>
+            <span className="bg-gradient-to-r from-pink-500 to-red-600 text-white px-4 py-2 rounded-full font-semibold">
+              Business Intelligence
+            </span>
+            <span className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-full font-semibold">
+              Cloud Solutions
+            </span>
+          </div>
         </div>
 
         {/* Profile Section */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* Profile Image */}
-          <div className="relative flex justify-center lg:justify-start">
+          <div className="relative flex justify-center">
             <div className="relative">
               <div className="w-80 h-80 relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 rounded-full animate-pulse-glow"></div>
@@ -40,22 +66,22 @@ export default function AboutPage() {
               </div>
               {/* Floating badges */}
               <div className="absolute -top-4 -right-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 py-2 rounded-full font-semibold animate-float">
-                Developer
+                Problem Solver
               </div>
               <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-4 py-2 rounded-full font-semibold animate-float" style={{animationDelay: "1s"}}>
-                BI Engineer
+                Fast Learner
               </div>
             </div>
           </div>
 
-          {/* Bio Content */}
-          <div className="space-y-8">
+          {/* Stats and Details */}
+          <div className="space-y-8 text-center lg:text-left">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-4">
-                Hello! I&apos;m <span className="gradient-text">Vinay Mahale</span>
-              </h2>
-              <p className="text-lg text-slate-400 leading-relaxed mb-6">
-                {siteConfig.about}
+              <h3 className="text-2xl font-bold text-white mb-6">
+                Passionate about creating <span className="gradient-text">efficient solutions</span>
+              </h3>
+              <p className="text-lg text-slate-300 leading-relaxed mb-6">
+                Always eager to explore new technologies and turn innovative ideas into reality through code and data-driven insights.
               </p>
             </div>
 
