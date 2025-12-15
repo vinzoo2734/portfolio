@@ -28,7 +28,14 @@ export default function ProjectsPage() {
         ))}
       </div>
       <div className="mt-12 flex justify-center">
-        <Image src="/me.png" alt="Vinay Mahale" width={100} height={100} className="rounded-full shadow-lg" />
+        <Image 
+          src="/me.png" 
+          alt="Vinay Mahale" 
+          width={100} 
+          height={100} 
+          className="rounded-full shadow-lg object-cover" 
+          priority 
+        />
       </div>
     </main>
   );

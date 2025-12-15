@@ -1,7 +1,6 @@
 // /app/page.js
 "use client";
 
-import Image from "next/image";
 import { siteConfig } from "@/data/config";
 
 export default function Home() {
@@ -9,13 +8,17 @@ export default function Home() {
     <main className="bg-gray-50 min-h-screen text-gray-900">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center h-screen text-center px-6">
-        <Image
-          src={siteConfig.profileImage}
-          alt={siteConfig.name}
-          width={150}
-          height={150}
-          className="rounded-full shadow-lg"
-        />
+        <div className="w-[150px] h-[150px] rounded-full overflow-hidden shadow-lg bg-gray-200">
+          <img
+            src="/me.png"
+            alt="Vinay Mahale"
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              console.log('Image failed to load:', e);
+              e.currentTarget.style.display = 'none';
+            }}
+          />
+        </div>
         <h1 className="text-4xl font-bold mt-6">{siteConfig.name}</h1>
         <p className="text-lg text-gray-600 mt-2">{siteConfig.role}</p>
 

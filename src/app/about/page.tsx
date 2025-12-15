@@ -18,7 +18,14 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900 px-8 py-16 bg-gradient-to-br from-white via-blue-50 to-purple-100">
       <div className="flex flex-col items-center">
-        <Image src={siteConfig.profileImage} alt={siteConfig.name} width={150} height={150} className="rounded-full shadow-lg mb-6" />
+        <Image 
+          src="/me.png" 
+          alt="Vinay Mahale" 
+          width={150} 
+          height={150} 
+          className="rounded-full shadow-lg object-cover" 
+          priority 
+        />
         <h1 className="text-4xl font-bold mb-4 text-blue-700">About Me</h1>
         <p className="text-lg text-gray-700 max-w-2xl text-center mb-8">{siteConfig.about}</p>
         <div className="text-left max-w-2xl bg-white rounded-xl shadow-md p-6">
